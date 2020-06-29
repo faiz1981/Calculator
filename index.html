@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <div>
+        <input id="result" class ="result" type="text" >
+    </div>
+    <div>
+        <button class="clearBtn" onclick="clearResult()">Clear All</button>
+    </div>
+   <div class="enter">
+    <div>
+        <button class="obtn top"  onclick="getNumber('%')">%</button>
+        <button class="obtn top"  onclick="sqrNumber()"> ×<sup>2</sup> </button>
+        <button class="obtn top" onclick="sqrRoot()"> √×	 </button>
+        <button class="obtn top" onclick="delSingle()">Del</button>
+    </div>
+    <div>
+        <button class="btn" onclick="getNumber('7')">7</button>
+        <button class="btn" onclick="getNumber('8')">8</button>
+        <button class="btn" onclick="getNumber('9')">9</button>
+        <button class="obtn" onclick="getNumber('*')">×</button>
+    </div>
+    <div>
+        <button class="btn" onclick="getNumber('4')">4</button>
+        <button class="btn" onclick="getNumber('5')">5</button>
+        <button class="btn" onclick="getNumber('6')">6</button>
+        <button class="obtn" onclick="getNumber('-')">-</button>
+    </div>
+    <div>
+        <button class="btn" onclick="getNumber('1')">1</button>
+        <button class="btn" onclick="getNumber('2')">2</button>
+        <button class="btn" onclick="getNumber('3')">3</button>
+        <button class="obtn" onclick="getNumber('+')">+</button>
+    </div>
+    <div>
+        <button class="btn" onclick="getNumber('0')">0</button>
+        <button class="btn" onclick="getNumber('.')">.</button>
+        <button class="obtn" onclick="getResult()">=</button>
+        <!-- <button class="btn" onclick="getNumber('.')">.</button> -->
+        <button class="obtn" onclick="getNumber('/')">÷</button>
+        
+    </div>
+    </div>
+</div>
+ 
+</body>
+<script src="app.js"></script>
+</html>
